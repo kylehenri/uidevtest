@@ -1,7 +1,8 @@
-/* CSS Contents
+/* CSS Table of Contents
   1. Reset
   2. Global rules
   3. Article rules
+    
 */
 
 /* Begin 1. Reset
@@ -54,7 +55,7 @@ table {
 	border-spacing: 0;
 }
 
-/* End 1. Reset */
+/* End Reset */
 
 /* Begin 2. Global rules */
 
@@ -66,13 +67,14 @@ body
     line-height:16px;
 		color:#202020;
 
-   background-color: #fff; 
-   background-image: url(../images/fallback-gradient.png); 
-   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#fff));
-   background-image: -webkit-linear-gradient(top, #ccc, #fff); 
-   background-image: -moz-linear-gradient(top, #ccc, #fff);
-   background-image: -ms-linear-gradient(top, #ccc, #fff);
-   background-image: -o-linear-gradient(top, #ccc, #fff);
+		/* body gradient code */
+		background-color: #ccc; 
+		background-image: url(../images/fallback-gradient.png); 
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#fff));
+		background-image: -webkit-linear-gradient(top, #ccc, #fff); 
+		background-image: -moz-linear-gradient(top, #ccc, #fff);
+		background-image: -ms-linear-gradient(top, #ccc, #fff);
+		background-image: -o-linear-gradient(top, #ccc, #fff);
 }
 a
 {
@@ -94,7 +96,7 @@ p
 	min-height:900px; /* for gradient */
 }
 
-/* End 2. Global rules */
+/* End Global rules */
 
 /* Begin 3. Article rules */
 .article .breadcrumb
@@ -112,6 +114,8 @@ p
 .article h1
 {
     font-family:Georgia,"Times New Roman",Times,serif;
+		/* instructions.txt details 18px for headline font size, but 26px appears to
+			 match mockup.jpg more correctly. Change to 18px here if needed */
 		font-size:26px;
 		line-height:30px;
 		padding:18px 0;
@@ -220,4 +224,4 @@ p
 	line-height:14px;
 	padding:8px 0 0 0;
 }
-/* End 3. Article rules */
+/* End Article rules */
