@@ -1,0 +1,223 @@
+/* CSS Contents
+  1. Reset
+  2. Global rules
+  3. Article rules
+*/
+
+/* Begin 1. Reset
+  http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End 1. Reset */
+
+/* Begin 2. Global rules */
+
+body
+{
+    margin:0;
+    font-family:Arial,"MS Trebuchet",sans-serif;
+    font-size:14px;
+    line-height:16px;
+		color:#202020;
+
+   background-color: #fff; 
+   background-image: url(../images/fallback-gradient.png); 
+   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#fff));
+   background-image: -webkit-linear-gradient(top, #ccc, #fff); 
+   background-image: -moz-linear-gradient(top, #ccc, #fff);
+   background-image: -ms-linear-gradient(top, #ccc, #fff);
+   background-image: -o-linear-gradient(top, #ccc, #fff);
+}
+a
+{
+	color:#CC6600;
+	text-decoration:none;
+}
+a:focus
+{
+	outline:none;
+}
+p
+{
+	margin:14px 0;
+}
+.container
+{
+	width:620px;
+	margin:0 auto;
+	min-height:900px; /* for gradient */
+}
+
+/* End 2. Global rules */
+
+/* Begin 3. Article rules */
+.article .breadcrumb
+{
+	padding:20px 0 0 0;
+}
+.article .breadcrumb a
+{
+	padding: 0 2px;
+}
+.article .breadcrumb a:first-child
+{
+	padding:0 2px 0 0;
+}
+.article h1
+{
+    font-family:Georgia,"Times New Roman",Times,serif;
+		font-size:26px;
+		line-height:30px;
+		padding:18px 0;
+}
+.article .left-column,
+.article .right-column
+{
+	float:left;
+	width:169px;
+}
+.article .right-column
+{
+	width:431px;
+	margin-left:20px;
+}
+.article .author a
+{
+	font-weight:bold;
+}
+.article .author-detail
+{
+	font-size:11px;
+	line-height:14px;
+	padding:2px 0 10px;
+}
+.article .updated,
+.article .published
+{
+	font-size:12px;
+	line-height:14px;
+	color:#666;
+}
+.article .utility-bar
+{
+	border-top:1px dotted #666;
+	margin:8px 0 0 0;
+	padding:4px 0 0 0;
+}
+.article .utility-bar a
+{
+	color:#202020;
+	font-size:11px;
+	line-height:20px;
+	padding:0 9px 0 18px;
+	background:transparent url(../images/sprites.gif) 0 0 no-repeat;
+	margin-left:4px;
+}
+.article .utility-bar a.post
+{
+	background-position:0 -480px;
+}
+.article .utility-bar a.email
+{
+	background-position:0 -255px;
+}
+.article .utility-bar a.print
+{
+	background-position:0 -301px;
+}
+.article .utility-bar a.share
+{
+	background-position:0 -346px;
+}
+.article .utility-bar a.type,
+.article .utility-bar a.plus
+{
+	background-position:0 -390px;
+}
+.article .utility-bar a.minus
+{
+	background-position:0 -435px;
+}
+.article .location
+{
+	text-transform:uppercase;
+}
+.article .credit
+{
+	font-size:10px;
+	line-height:14px;
+	color:#666;
+	text-align:right;
+}
+.article a.enlarge
+{
+	margin-top:8px;
+	font-size:10px;
+	line-height:14px;
+	display:block;
+	padding:0 0 0 20px;
+	background:transparent url(../images/sprites.gif) 0 -389px no-repeat;
+}
+.article .article-body
+{
+	font-size:14px;
+	line-height:16px;
+}
+.article .largetype
+{
+	font-size:16px;
+	line-height:20px;
+}
+.article .caption
+{
+	font-size:12px;
+	line-height:14px;
+	padding:8px 0 0 0;
+}
+/* End 3. Article rules */
